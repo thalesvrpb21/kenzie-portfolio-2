@@ -46,7 +46,7 @@ export const ContactCard = styled("div", {
   ["& a"]:{
     "&:hover":{
         color: "$grey4",
-        cursor: "pointer"
+        cursor: "pointer",
     }
   },
   "@mobile": {

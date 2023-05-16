@@ -14,6 +14,8 @@ import { userData } from "@/utils/userData";
 
 import { FaGithub } from "react-icons/fa";
 
+import {About} from "@/components/About/"
+
 // Page Style
 import {
   Header,
@@ -62,7 +64,7 @@ export const Home = (): JSX.Element => {
               my projects and technologies
             </Text>
             <HeaderButtonsArea>
-              <Button as="a" type="primary" href="#projects">
+              <Button as="a" type="primary" href="#projects" >
                 See Projects
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
@@ -89,6 +91,7 @@ export const Home = (): JSX.Element => {
       </Header>
       <ProjectsArea id="projects">
         <Container>
+          <About/>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
@@ -97,7 +100,7 @@ export const Home = (): JSX.Element => {
               <Text as="p" type="body1" color="grey2">
                 Some of my{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                  side projects:
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
